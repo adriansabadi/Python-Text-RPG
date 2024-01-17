@@ -38,5 +38,5 @@ class SupportSpells(Spells):
     
 
 sp_001 = CombatSpells("Fireball", "Classic fireball", 10, 20)
-sp_002 = SupportSpells("Increase Strength", "Dummy Text", 20, 3, ef.player_strength_up, "self")
+sp_002 = SupportSpells("Increase Strength", "Increases character Strength", 20, 3, ef.player_strength_up, "self")
 
