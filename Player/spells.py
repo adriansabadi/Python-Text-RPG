@@ -37,6 +37,6 @@ class SupportSpells(Spells):
         return self.cooldown_counter
     
 
-sp_001 = CombatSpells("Fireball", "Classic fireball", 10, 20)
+sp_001 = CombatSpells("Fireball", "Classic fireball", 10, 10)
 sp_002 = SupportSpells("Increase Strength", "Increases character Strength", 20, 3, ef.player_strength_up, "self")
 

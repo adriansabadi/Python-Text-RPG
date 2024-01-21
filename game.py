@@ -40,6 +40,7 @@ def check_victory_conditions(player_arg:pl.PlayerClass, enemy_target:en.HostileN
         print("DEFEAT")
         time.sleep(3)
         battle_is_ongoing = False
+        exit()
     return battle_is_ongoing
 
 def print_general_info(player_arg:pl.PlayerClass, enemy_target:en.HostileNPC, battle_turn_arg):

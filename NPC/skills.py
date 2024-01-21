@@ -32,7 +32,7 @@ class ActiveSkills(EnemySkills):
         return self.cooldown_counter
 
 
-class PasiveSkills(EnemySkills):
+class PassiveSkills(EnemySkills):
     def __init__(self, skill_name_arg, description_arg, target_affected_arg, effect_arg):
         self.target_affected = target_affected_arg
         self.effect = effect_arg
@@ -46,6 +46,6 @@ es_0004 = ActiveSkills("Push", "Enemy knocks out its objective", "target", effec
 es_0005 = ActiveSkills("Fireball", "Classic fireball", "target", effects.fireball, 0, 20)
 es_0006 = ActiveSkills("Charge", "Enemy charges against its objective", "target", effects.charge, 4, 0)
 es_0007 = ActiveSkills("Magic Protection", "Increases its Magic Defense by 10 points", "self", effects.increase_magic_defense_by_50_points, 6, 150)
-es_0008 = PasiveSkills("Passive Health Regeneration", "Recovers health points at the end of each turn", "self", effects.recover_hp_passive)
-es_0009 = PasiveSkills("Passive Mana Regeneration", "Recovers mana points at the end of each turn", "self", effects.recover_mp_passive)
+es_0008 = PassiveSkills("Passive Health Regeneration", "Recovers health points at the end of each turn", "self", effects.recover_hp_passive)
+es_0009 = PassiveSkills("Passive Mana Regeneration", "Recovers mana points at the end of each turn", "self", effects.recover_mp_passive)
 es_0010 = ActiveSkills("Anti-magic Cut", "Burns its objective mana points", "target", effects.melee_attack_that_decreases_mana_from_player, 3, 100)

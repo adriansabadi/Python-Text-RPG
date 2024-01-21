@@ -98,7 +98,7 @@ class HostileNPC:
     
     def use_turn_based_passive_v1(self):
         for skill in self.skills:
-            if type(skill) == sk.PasiveSkills:
+            if type(skill) == sk.PassiveSkills:
                 skill.effect(self)
                 time.sleep(1)
     
@@ -131,7 +131,7 @@ class HostileNPC:
     
 
 def enemy_wave_1():
-    id_001 = HostileNPC("Nah I'd adapt", 3000, 500, 80, 100, 40, 40, 20, 20, 20, [sk.es_0001, sk.es_0003, sk.es_0004, sk.es_0007, sk.es_0008, sk.es_0009, sk.es_0010], 10000, 10000)
+    id_001 = HostileNPC("Special Enemy", 3000, 500, 80, 100, 40, 40, 20, 20, 20, [sk.es_0001, sk.es_0003, sk.es_0004, sk.es_0007, sk.es_0008, sk.es_0009, sk.es_0010], 10000, 10000)
     id_002 = HostileNPC("Wild Beast", 20, 0, 12, 0, 3, 0, 2, 4, 0, [sk.es_0001, sk.es_0003], 20, 30)
     id_003 = HostileNPC("Swordsman", 40, 0, 18, 0, 6, 0, 5, 3, 2, [sk.es_0001, sk.es_0003, sk.es_0004], 50, 80)
     id_004 = HostileNPC("Archer", 40, 0, 18, 0, 4, 0, 4, 6, 2, [sk.es_0001], 40, 60)

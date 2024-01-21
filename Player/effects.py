@@ -5,5 +5,5 @@ import Player.status as st
 
 
 def player_strength_up(player):
-    buff = st.PlayerStrengthUp("Strength Up", 3, player, True, 8) 
+    buff = st.PlayerStrengthUp("Strength Up", 3, player, True, 4) 
     return
