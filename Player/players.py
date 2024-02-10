@@ -14,7 +14,7 @@ class PlayerClass:
         self.player_name = name
         self.level = 1
         self.experience = 0
-        self.atribute_points = 0
+        self.attribute_points = 0
         self.status = []
         self.coins = 0
         #  Flasks that player will use to restore character mana and health
@@ -289,7 +289,7 @@ class PlayerClass:
                 print("\nINDEX ERROR!!!\n")
                 time.sleep(4)
             except:
-                print("\nUNKNOW ERROR, PLEASE REPORT\n")
+                print("\nUNKNOWN ERROR, PLEASE REPORT\n")
                 time.sleep(4)
                 break
     
@@ -435,7 +435,7 @@ class PlayerClass:
                 print("\nINDEX ERROR!!!\n")
                 time.sleep(4)
             except:
-                print("\nUNKNOW ERROR, PLEASE REPORT\n")
+                print("\nUNKNOWN ERROR, PLEASE REPORT\n")
                 time.sleep(4)
                 break
                 
@@ -496,7 +496,7 @@ class PlayerClass:
     
     #  Functions to manage player level and base attributes
     def level_up(self):
-        self.atribute_points += 1
+        self.attribute_points += 1
         self.level += 1
         print(f"The character has reached level {self.level}\n")
         return self.level
@@ -515,14 +515,14 @@ class PlayerClass:
         self.update_stats()
         self.hp = self.max_hp
         self.sp = self.max_sp
-        self.atribute_points -= 1
+        self.attribute_points -= 1
         print(f"Character Strength has been increased")
         return self.base_strength
     
     def add_agility(self):
         self.base_agility += 1
         self.update_stats()
-        self.atribute_points -= 1
+        self.attribute_points -= 1
         print(f"Character Agility has been increased")
         return self.base_agility
     
@@ -530,7 +530,7 @@ class PlayerClass:
         self.base_intelligence += 1
         self.update_stats()
         self.mp = self.max_mp
-        self.atribute_points -= 1
+        self.attribute_points -= 1
         print(f"Character Intelligence has been increased")
         return self.base_intelligence
   

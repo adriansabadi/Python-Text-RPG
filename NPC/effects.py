@@ -4,7 +4,7 @@ import random as rd
 import NPC.status as buffs
 
 
-# Funciones que ayudan en otras funciones
+# Functions that are used in other functions, usually to calculate a stat
 def calculate_normal_attack_damage(npc_arg, player_arg, damage_modifier):
     damage = (npc_arg.attack_points * damage_modifier)
     damage = round(damage, 0)
@@ -70,7 +70,7 @@ def increase_defense_by_50_points(npc_arg):
     return npc_arg.defense_points
 
 
-def allmigthy_push(npc_arg, player_arg):
+def almighty_push(npc_arg, player_arg):
     time.sleep(1)
     print(f"\n...{npc_arg.name} charges against your character...")
     time.sleep(1)

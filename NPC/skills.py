@@ -40,9 +40,9 @@ class PassiveSkills(EnemySkills):
 
 
 es_0001 = ActiveSkills("Normal attack", "Enemy uses a normal attack","target", effects.use_normal_attack, 0, 0)
-es_0002 = ActiveSkills("Magic attack", "Enemy uses magic proyectiles to attack", "target",effects.use_magic_attack, 0, 5)
+es_0002 = ActiveSkills("Magic attack", "Enemy uses magic projectiles to attack", "target",effects.use_magic_attack, 0, 5)
 es_0003 = ActiveSkills("Fury", "Enemy doubles its Strength", "self", effects.double_strength, 7, 100)
-es_0004 = ActiveSkills("Push", "Enemy knocks out its objective", "target", effects.allmigthy_push, 4, 0)
+es_0004 = ActiveSkills("Push", "Enemy knocks out its objective", "target", effects.almighty_push, 4, 0)
 es_0005 = ActiveSkills("Fireball", "Classic fireball", "target", effects.fireball, 0, 20)
 es_0006 = ActiveSkills("Charge", "Enemy charges against its objective", "target", effects.charge, 4, 0)
 es_0007 = ActiveSkills("Magic Protection", "Increases its Magic Defense by 10 points", "self", effects.increase_magic_defense_by_50_points, 6, 150)

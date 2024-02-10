@@ -44,6 +44,7 @@ def check_victory_conditions(player_arg:pl.PlayerClass, enemy_target:en.HostileN
     return battle_is_ongoing
 
 def print_general_info(player_arg:pl.PlayerClass, enemy_target:en.HostileNPC, battle_turn_arg):
+    print("")
     print(f'''///___________________TURN: {battle_turn_arg}___________________|
 -----PLAYER STATS--------------------------
 PLAYER NAME: {player_arg.player_name}
@@ -169,7 +170,7 @@ def main(player_arg:pl.PlayerClass):
 Select what to do
 (1) Next battle
 (2) Show character stats
-(3) Atributes
+(3) Attributes
 (4) Store
 (5) Exit''')
         user_choice = input("> ").strip().lower()
@@ -194,7 +195,7 @@ Select what to do
                 os.system('cls')
                 exit()
             case _:
-                print("UNKNOW COMMAND")
+                print("UNKNOWN COMMAND")
                 continue
 
 print("WELCOME TO THE GAME")

@@ -197,12 +197,12 @@ def attributes_menu(player_arg:pl.PlayerClass):
         print(f"Strength(F):{player_arg.strength} ")
         print(f"Agility(A):{player_arg.agility}")
         print(f"Intelligence(I):{player_arg.intelligence}")
-        print(f"Available attribute points: {player_arg.atribute_points}")
+        print(f"Available attribute points: {player_arg.attribute_points}")
         user_choice = input("Type the desired attribute or -e to go back\n> ").strip().lower()
         if user_choice == "-e":
             break
         else:
-            if player_arg.atribute_points >= 1:
+            if player_arg.attribute_points >= 1:
                 match user_choice:
                     case "f":
                         player_arg.add_strength()
@@ -215,9 +215,9 @@ def attributes_menu(player_arg:pl.PlayerClass):
                         print("Please type one of the options")
                         time.sleep(2)
                         continue
-                print(f"Remaining attribute points: {player_arg.atribute_points}")
+                print(f"Remaining attribute points: {player_arg.attribute_points}")
                 time.sleep(2)
-            elif player_arg.atribute_points < 1:
+            elif player_arg.attribute_points < 1:
                 os.system('cls')
                 print("\nNO ATTRIBUTE POINTS AVAILABLE")
                 time.sleep(2)

@@ -31,7 +31,7 @@ class HostileNPC:
         self.bonus_strength = 0
         self.bonus_agility = 0
         self.bonus_intelligence = 0
-        #Atributos totales
+        #Total Attributes
         self.max_hp = self.base_max_hp + self.bonus_hp
         self.max_mp = self.base_max_mp + self.bonus_mp
         self.hp = self.base_hp + self.bonus_hp
