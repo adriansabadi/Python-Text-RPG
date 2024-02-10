@@ -46,7 +46,7 @@ def purchase_dialog(player_arg:pl.PlayerClass, item_list_arg:list, item_index_in
 def print_a_shop(player_arg:pl.PlayerClass, list_arg:list, title:str):
     while True:
             print_preview_info_from_items_in_shop(list_arg, title)
-            user_choice = input("Select an object:\n> ").strip().lower()
+            user_choice = input("Select an object to inspect:\n> ").strip().lower()
             if user_choice == "-e" :
                 break
             elif user_choice.isdecimal():
